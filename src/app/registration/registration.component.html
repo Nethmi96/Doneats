@@ -1,0 +1,85 @@
+<body>
+    <h3 class="w3layouts">Doneats</h3>
+    <div class="clear"></div>
+    <div class="content-w3ls">
+        <div class="form_w3layouts">
+            <form [formGroup]="registrationForm" [class.is-invalid]="name.invalid && 
+            name.touched" [class.is-valid]="name.valid" class="agile_form">
+                <div class="agileits-left">
+                    <input type="text" formControlName="name" placeholder="Name">
+                    <small *ngIf="(name.errors && submitted==true) ||
+                    (name.touched && name.invalid)">
+                        <small *ngIf="name.errors?.required">Name is required</small>
+                    </small>
+                </div>
+
+                <div class="agileits-left">
+                    <input type="password" formControlName="password" placeholder="Password">
+                    <small *ngIf="(password.errors && submitted==true) ||
+                    (password.touched && password.invalid)">
+                        <small *ngIf="password.errors?.required">Password is required</small>
+                    </small>
+                </div>
+
+                <div class="agileits-left">
+                    <input type="number" formControlName="number" placeholder="Contact Number">
+                    <small *ngIf="(number.touched && number.invalid)">
+                        <small *ngIf="number.errors?.required">Contact Number is required</small>
+                        <small *ngIf="number.errors?.pattern">Enter a valid Phone Number</small>
+                    </small>
+                </div>
+
+                <div class="agileits-left">
+                    <input type="email" formControlName="email" placeholder="E-mail">
+                    <small *ngIf="(email.errors && submitted==true) ||
+                    (email.touched && email.invalid)">
+                        <small *ngIf="email.errors?.required">Email is required</small>
+                        <small *ngIf="email.errors?.pattern">Enter a valid email address</small>
+                    </small>
+                </div>
+
+                <div class="agileits-left">
+                    <input type="text" formControlName="address" placeholder="Location Address">
+                    <small *ngIf="(address.errors && submitted==true) ||
+                    (address.touched && address.invalid)">
+                        <small *ngIf="address.errors?.required">Location Address is required</small>
+                    </small>
+                </div>
+
+                <div class="section_class_agileits">
+                    <select formControlName="type">
+                        <option value="">Type</option>
+                        <option [value]="type" *ngFor="let type of types">{{type}}</option>
+                    </select>
+                    <small *ngIf="(type.errors && submitted==true) ||
+                    (type.touched && type.invalid)">
+                        <small *ngIf="type.errors?.required">Type should be selected</small>
+                    </small>
+                </div>
+
+                <div class="agileits-left">
+                    <input type="text" formControlName="regNo" placeholder="Business Registration Number">
+                    <small *ngIf="(regNo.errors && submitted==true) ||
+                    (regNo.touched && regNo.invalid)">
+                        <small *ngIf="regNo.errors?.required">Business Registration is required</small>
+                    </small>
+                </div>
+
+                <div class="section_class_agileits">
+                    <select formControlName="hygieneRating">
+                        <option value="">Food Hygiene Rating</option>
+                    <option [value]="rating" *ngFor="let rating of ratings">{{rating}}</option>
+                    </select>
+                    <small *ngIf="(hygieneRating.errors && submitted==true) ||
+                    (hygieneRating.touched && type.invalid)">
+                        <small *ngIf="hygieneRating.errors?.required">Hygiene Rating should be selected</small>
+                    </small>
+                </div>
+                <div class="submit-w3l">
+                    <input type="submit" value="REGISTER" (click)="onSubmit()">
+                </div>
+            </form>
+        </div>
+        <div class="clear"></div>
+    </div>
+</body>
