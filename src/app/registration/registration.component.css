@@ -63,7 +63,7 @@ h3.w3layouts {
     cursor: pointer;
     width: 95%;
     border: none;
-    background: #38ada9;
+    background: #0a3d62;
     outline: none;
     margin: 1.5em 0 0;
     border-radius: 4px;
@@ -75,7 +75,7 @@ h3.w3layouts {
     text-align: center;
 }
 .submit-w3l input[type=submit]:hover {
-    background: #36a3a0;
+    background: #0c2461;
     color: white;
 }
 

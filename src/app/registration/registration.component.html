@@ -66,7 +66,7 @@
                 </div>
 
                 <div class="section_class_agileits">
-                    <select formControlName="hygieneRating">
+                    <select *ngIf="type.value=='Food Outlet'" formControlName="hygieneRating">
                         <option value="">Food Hygiene Rating</option>
                     <option [value]="rating" *ngFor="let rating of ratings">{{rating}}</option>
                     </select>
