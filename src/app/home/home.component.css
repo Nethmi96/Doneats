@@ -10,6 +10,9 @@ body {
   height: 150vh;
   font-family: 'Hind Siliguri', sans-serif;
 }
+h6{
+  color: rgba(177, 177, 177, 0.78);
+}
 h3.w3layouts {
   text-align: center;
   font-size: 4.2em;
@@ -54,9 +57,9 @@ h3.w3layouts {
   padding: 3em 2em;
 }
 
-.submit-w3l input[type=submit] {
+.border-success {
   color: rgb(255, 255, 255);
-  padding: 10px 50px;
+  padding: 10px 10px;
   font-size: 1.3em;
   font-weight: 600;
   letter-spacing: 1px;
@@ -65,7 +68,7 @@ h3.w3layouts {
   border: none;
   background: #0a3d62;
   outline: none;
-  margin: 1.5em 0 0;
+  margin: 0.2em 0 ;
   border-radius: 4px;
   font-family: 'Assistant', sans-serif;
   transition: all 0.5s ease-in-out;
@@ -74,7 +77,7 @@ h3.w3layouts {
   -o-transition: all 0.5s ease-in-out;
   text-align: center;
 }
-.submit-w3l input[type=submit]:hover {
+.border-success:hover {
   background: #0c2461;
   color: white;
 }
@@ -292,13 +295,13 @@ small {
   display: flex;
   align-items: center;
   text-align: center;
-  color: white;
+  color: rgba(194, 194, 194, 0.78);
   width: 94%;
 }
 .separator::before, .separator::after {
   content: '';
   flex: 1;
-  border-bottom: 1px solid #ffffff;
+  border-bottom: 1px solid rgba(180, 180, 180, 0.84);
 }
 .separator::before {
   margin-right: .25em;

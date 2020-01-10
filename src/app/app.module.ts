@@ -9,6 +9,7 @@ import { RegistrationComponent } from './registration/registration.component';
 import { LoginComponent } from './login/login.component';
 import { ChomeComponent } from './charity/chome/chome.component';
 import { FhomeComponent } from './food-outlets/fhome/fhome.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { FhomeComponent } from './food-outlets/fhome/fhome.component';
     RegistrationComponent,
     LoginComponent,
     ChomeComponent,
-    FhomeComponent
+    FhomeComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -24,10 +26,11 @@ import { FhomeComponent } from './food-outlets/fhome/fhome.component';
     FormsModule,
     HttpClientModule,
     RouterModule.forRoot([
-      {path: '', component: RegistrationComponent},
+      {path: 'registration', component: RegistrationComponent},
       {path: 'login', component: LoginComponent},
       {path: 'chome', component: ChomeComponent},
-      {path: 'fhome', component: FhomeComponent}
+      {path: 'fhome', component: FhomeComponent},
+      {path: '', component: HomeComponent}
     ])
   ],
   providers: [],
