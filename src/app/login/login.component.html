@@ -3,23 +3,13 @@
   <div class="clear"></div>
   <div class="content-w3ls">
     <div class="form_w3layouts">
-      <form [formGroup]="loginForm" [class.is-invalid]="name.invalid &&
-          name.touched" [class.is-valid]="name.valid" class="agile_form">
-        <div class="agileits-left">
-          <input type="text" formControlName="name" placeholder="Name">
-          <small *ngIf="(name.errors && submitted==true) ||
-                  (name.touched && name.invalid)">
-            <small *ngIf="name.errors?.required">Name is required</small>
-          </small>
-        </div>
-        <div class="agileits-left" >
-          <div class="separator">Or</div>
-        </div>
+      <form [formGroup]="loginForm" [class.is-invalid]="email.invalid &&
+          email.touched" [class.is-valid]="email.valid" class="agile_form">
         <div class="agileits-left">
           <input type="email" formControlName="email" placeholder="E-mail">
           <small *ngIf="(email.errors && submitted==true) ||
-                  (email.touched && email.invalid)">
-            <small *ngIf="email.errors?.required ">Email is required</small>
+                    (email.touched && email.invalid)">
+            <small *ngIf="email.errors?.required">Email is required</small>
             <small *ngIf="email.errors?.pattern">Enter a valid email address</small>
           </small>
         </div>

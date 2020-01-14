@@ -16,14 +16,10 @@ export class LoginComponent implements OnInit {
   ) { }
 
   loginForm = this.fb.group({
-    name: [''],
-    email: ['', [Validators.pattern(this.emailPattern)]],
+    email: ['', [Validators.required , Validators.pattern(this.emailPattern)]],
     password: ['', [Validators.required]]
   });
 
-  get name() {
-    return this.loginForm.get('name');
-  }
 
   get password() {
     return this.loginForm.get('password');
