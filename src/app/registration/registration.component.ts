@@ -77,7 +77,7 @@ export class RegistrationComponent implements OnInit {
   onSubmit() {
     console.log('Submitted');
     this.submitted = true;
-    
+
     if (this.type.value === 'Charity Organization') {
       this.route.navigate(['chome']);
     }

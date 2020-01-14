@@ -97,6 +97,14 @@ small {
 /*-- //form --*/
 
 /*--responsive--*/
+@media(max-width: 1660px){
+  .content-w3ls {
+    width: 43%;
+  }
+  h1.w3layouts {
+    width: 54%;
+  }
+}
 @media(max-width: 1440px){
 	.content-w3ls {
 		width: 43%;
