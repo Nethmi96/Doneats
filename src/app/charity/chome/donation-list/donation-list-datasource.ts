@@ -18,7 +18,11 @@ export interface DonationListItem {
 
 // TODO: replace this with real data from your application
 const EXAMPLE_DATA: DonationListItem[] = [
-  {id: 1, name: 'Hydro', type: 'Dinner', ratings: 5, expDate: null, expTime: null, ammount: 100, status:true},
+  {id: 1, name: 'Hydro', type: 'Dinner', ratings: 5, expDate: null, expTime: null, ammount: 100, status: true},
+  {id: 2, name: 'Hydro', type: 'Dinner', ratings: 5, expDate: null, expTime: null, ammount: 100, status: true},
+  {id: 3, name: 'Hydro', type: 'Dinner', ratings: 5, expDate: null, expTime: null, ammount: 100, status: false},
+  {id: 4, name: 'new Rose', type: 'Dinner', ratings: 5, expDate: null, expTime: null, ammount: 100, status: true},
+  {id: 4, name: 'new Rose', type: 'Dinner', ratings: 5, expDate: null, expTime: null, ammount: 100, status: true},
 ];
 
 /**

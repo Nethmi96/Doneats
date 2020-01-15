@@ -1,4 +1,19 @@
 .full-width-table {
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.17);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+mat-paginator{
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+th,td{
+  color: rgba(205, 205, 205, 0.81);
+  margin: 2px;
+}
+td.mat-cell{
+  padding: 3px;
+}
+svg{
+  color: white;
 }
