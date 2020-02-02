@@ -32,12 +32,17 @@ h3.w3layouts {
 }
 .headline{
   color: #fff;
+  display: flex ;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 h2{
   font-size: 18px;
   font-weight: 300;
   line-height: 28px;
   margin: 15px 0 25px;
+  color: white;
 }
 .home-content{
   align-items: center;
@@ -85,4 +90,13 @@ h2{
   font-size: 12px;
   background: rgba(0, 0, 0, 0.8);
   color: #fff;
+}
+mat-card{
+  background-color: rgba(0,0,0,0);
+}
+.logo{
+  max-height: 200px;
+  max-width: 200px;
+  min-width: 50px;
+  min-height: 50px;
 }
