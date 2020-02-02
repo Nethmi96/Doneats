@@ -17,12 +17,14 @@ export class DonationListComponent implements AfterViewInit, OnInit {
 
   count: number;
   ratingColours: string[] = ['', '', '', '', ''];
+  date: Date = new Date();
 
   /** Columns displayed in the table. Columns IDs can be added, removed, or reordered. */
   displayedColumns = ['Id', 'Name', 'Type', 'Rating', 'Expire Date', 'Expire Time', 'Enough for ', 'status'];
 
   ngOnInit() {
     this.dataSource = new DonationListDataSource();
+    console.log(this.date);
   }
 
   ngAfterViewInit() {

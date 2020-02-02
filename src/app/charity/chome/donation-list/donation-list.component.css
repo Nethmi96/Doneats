@@ -12,8 +12,16 @@ th,td{
   margin: 2px;
 }
 td.mat-cell{
-  padding: 3px;
+  padding: 1px 15px;
 }
-svg{
+td.mat-column {
+  width: 20px;
+  padding-right: 8px;
+}
+.mat-h1{
   color: white;
+  font-family: 'Assistant', sans-serif;
+  font-size: 25px;
+  text-align: center;
+  margin: 10px;
 }

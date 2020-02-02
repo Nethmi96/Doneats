@@ -18,11 +18,16 @@ export interface DonationListItem {
 
 // TODO: replace this with real data from your application
 const EXAMPLE_DATA: DonationListItem[] = [
-  {id: 1, name: 'Hydro', type: 'Dinner', ratings: 5, expDate: null, expTime: null, amount: 100, status: true},
-  {id: 2, name: 'Hydro', type: 'Dinner', ratings: 4, expDate: null, expTime: null, amount: 100, status: true},
-  {id: 3, name: 'Hydro', type: 'Dinner', ratings: 5, expDate: null, expTime: null, amount: 100, status: false},
-  {id: 4, name: 'new Rose', type: 'Dinner', ratings: 3, expDate: null, expTime: null, amount: 100, status: true},
-  {id: 5, name: 'new Rose', type: 'Dinner', ratings: 1, expDate: null, expTime: null, amount: 100, status: true},
+  {id: 1, name: 'Hydro', type: 'Dinner', ratings: 5, expDate: new Date(), expTime: null, amount: 100, status: true},
+  {id: 2, name: 'Hydro', type: 'Dinner', ratings: 4, expDate: new Date(), expTime: null, amount: 100, status: true},
+  {id: 3, name: 'Hydro', type: 'Dinner', ratings: 5, expDate: new Date(), expTime: null, amount: 100, status: false},
+  {id: 4, name: 'new Rose', type: 'Dinner', ratings: 3, expDate: new Date(), expTime: null, amount: 100, status: true},
+  {id: 5, name: 'new Rose', type: 'Dinner', ratings: 1, expDate: new Date(), expTime: null, amount: 100, status: true},
+  {id: 6, name: 'Hydro', type: 'Dinner', ratings: 5, expDate: new Date(), expTime: null, amount: 100, status: true},
+  {id: 7, name: 'Hydro', type: 'Dinner', ratings: 4, expDate: new Date(), expTime: null, amount: 100, status: true},
+  {id: 8, name: 'Hydro', type: 'Dinner', ratings: 5, expDate: null, expTime: null, amount: 100, status: false},
+  {id: 9, name: 'new Rose', type: 'Dinner', ratings: 3, expDate: null, expTime: null, amount: 100, status: true},
+  {id: 10, name: 'new Rose', type: 'Dinner', ratings: 1, expDate: null, expTime: null, amount: 100, status: true},
 ];
 
 /**
